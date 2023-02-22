@@ -6,8 +6,8 @@ print.hglm <- function(hglm_out) {
 
 #' @export
 coef.hglm <- function(hglm_out) {
-  sprintf('Model: ', hglm_out$model)
-  sprintf(hglm_out$coefficients)
+  sprintf(paste0('Model: ', hglm_out$model))
+  print(hglm_out$coefficients)
 }
 
 #' @export
